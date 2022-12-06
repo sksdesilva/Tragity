@@ -6,6 +6,18 @@ import Home from './components/pages/Home';
 import AboutUs from './components/pages/AboutUs';
 import Categories from './components/pages/Categories';
 import Contact from './components/pages/Contact';
+import Computers from './components/Computers/Computers';
+import Cosmetics from './components/Cosmetics/Cosmetics';
+import Costumes from './components/Costumes/Costumes';
+import Electronics from './components/Electronics/Electronics';
+import Pets from './components/Pets/Pets';
+import Shoes from './components/Shoes/Shoes';
+import Phones from './components/Phones/Phones';
+import Toys from './components/Toys/Toys';
+import Handicrafts from './components/Handicrafts/Handicrafts';
+import Kitchenware from './components/Kithchenware/Kitchenware';
+import Gifts from './components/Category/Gifts/Gifts';
+import Stationaries from './components/Stationaries/Stationaries';
 
 
 const App = () => {
@@ -20,6 +32,7 @@ const App = () => {
     <Route path="/aboutUs" element={<AboutUs/>}/>
     <Route path="/categories" element={<Categories/>}/>
     <Route path="/contact" element={<Contact/>}/>
+    <Route path="/computers" element={<Computers/>}/>
     </Routes>
 
     <Footer/>
