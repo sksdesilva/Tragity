@@ -12,6 +12,7 @@ const Categoryitems = [
         itemName:"Computers",
         adds:4,
         image:"./images/Category/1.png",
+        url:"/computers",
     },
 
     {
@@ -19,6 +20,7 @@ const Categoryitems = [
         itemName:"Cosmetics",
         adds:4,
         image:"./images/Category/2.png",
+        url:"/cosmetics",
     },
 
     {
@@ -26,6 +28,7 @@ const Categoryitems = [
         itemName:"Costumes",
         adds:"4",
         image:"./images/Category/3.png",
+        url:"/costumes",
     },
 
     {
@@ -33,6 +36,8 @@ const Categoryitems = [
         itemName:"Electronics",
         adds:"4",
         image:"./images/Category/4.png",
+        url:"/electronics",
+
     },
 
     {
@@ -40,6 +45,7 @@ const Categoryitems = [
         itemName:"Pets",
         adds:"4",
         image:"./images/Category/5.png",
+        url:"/pets",
     },
 
     {
@@ -47,6 +53,7 @@ const Categoryitems = [
         itemName:"Shoes",
         adds:"4",
         image:"./images/Category/6.png",
+        url:"/shoes",
     },
 
     {
@@ -54,6 +61,7 @@ const Categoryitems = [
         itemName:"Phones",
         adds:"4",
         image:"./images/Category/7.png",
+        url:"/phones",
     },
 
     {
@@ -61,6 +69,7 @@ const Categoryitems = [
         itemName:"Toys",
         adds:"4",
         image:"./images/Category/8.png",
+        url:"toys",
     },
 
     {
@@ -68,6 +77,7 @@ const Categoryitems = [
         itemName:"Handicrafts",
         adds:"4",
         image:"./images/Category/9.png",
+        url:"handicrafts",
     },
 
     {
@@ -75,6 +85,7 @@ const Categoryitems = [
         itemName:"kitchenware",
         adds:"4",
         image:"./images/Category/10.png",
+        url:"kitchenwares",
     },
 
     {
@@ -82,6 +93,7 @@ const Categoryitems = [
         itemName:"Gift",
         adds:"4",
         image:"./images/Category/11.png",
+        url:"gifts"
     },
 
     {
@@ -89,6 +101,7 @@ const Categoryitems = [
         itemName:"Stationary",
         adds:"4",
         image:"./images/Category/12.png",
+        url:"stationaries"
     },
 ];
 
@@ -103,7 +116,7 @@ const Categoryitems = [
                 return ( 
                 <div className="item">
         
-                <Link class="cat" to ="/aboutus">
+                <Link class="cat" to ={val.url}>
                     <div className="row">
                         <div className="col-4">
                             <img className="Cimg" src={val.image}  alt="image"/>
