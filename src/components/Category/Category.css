@@ -1,0 +1,23 @@
+.container-1{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        width: 75%;
+        margin: auto;
+      }
+    
+
+.Cimg{
+    height: 50px;
+}
+
+.cat{
+  text-decoration: none;
+}
+.item{
+  width: 150px;
+}
+h3{
+  margin-left: 185px;
+  margin-bottom: 20px;
+}
