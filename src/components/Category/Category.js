@@ -120,8 +120,8 @@ const Categoryitems = [
                     <div className="row">
                         <div className="col-4">
                             <img className="Cimg" src={val.image}  alt="image"/>
-                        </div>
                         
+                        </div>
                         <div className="col-8">
                             <h4>{val.itemName}</h4>
                             <p>{val.adds} ads</p>

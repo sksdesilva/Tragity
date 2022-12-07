@@ -18,6 +18,7 @@ import Handicrafts from './components/Handicrafts/Handicrafts';
 import Kitchenware from './components/Kithchenware/Kitchenware';
 import Gifts from './components/Category/Gifts/Gifts';
 import Stationaries from './components/Stationaries/Stationaries';
+import BuyNow from './components/BuyNow/BuyNow';
 
 
 const App = () => {
@@ -45,6 +46,7 @@ const App = () => {
     <Route path="/kitchenwares" element={<Kitchenware/>}/>
     <Route path="/gifts" element={<Gifts/>}/>
     <Route path="/stationaries" element={<Stationaries/>}/>
+    <Route path="/buynow" element={<BuyNow/>}/>
     </Routes>
 
     <Footer/>

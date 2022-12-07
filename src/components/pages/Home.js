@@ -1,6 +1,7 @@
 import React from "react";
 import './Home.css'
 import Category from "../Category/Category";
+import Laptops from "../Computers/Laptops";
 
 
 const Home = () =>{
@@ -9,7 +10,7 @@ const Home = () =>{
         <div id="demo" className="carousel slide" data-bs-ride="carousel">
 
 
-<div className="carousel-indicators">
+<div className="carousel-indicators" data-interval="5000">
   <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
   <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
   <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
@@ -40,6 +41,8 @@ const Home = () =>{
 
 
 <Category/>
+
+
 
 
 

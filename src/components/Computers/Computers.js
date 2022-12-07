@@ -1,11 +1,14 @@
 import React from "react";
+import Laptops from "./Laptops";
 
 const Computers = () =>{
+
+
     return(
         <>
 
 
-
+<Laptops/>
 
         </>
     );
