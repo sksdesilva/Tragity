@@ -1,10 +1,9 @@
 import React from "react";
 import CommonCatalog from "../CommonCatalog/CommonCatalog";
-import '../../App.css';
 
-const Toys = () =>{
+const Gift = () =>{
 
-    const Toys = [
+    const Gift = [
         {
             id:1,
             brand:"ASUS",
@@ -47,9 +46,9 @@ const Toys = () =>{
 
     return(
         <>
-        <p className="headerName">Toys</p>
+        <p className="headerName">Gifts</p>
         <div className="container-2">
-        {Toys.map((value , index) => {
+        {Gift.map((value , index) => {
             return(
                 
                 <CommonCatalog 
@@ -64,8 +63,9 @@ const Toys = () =>{
         })}
  </div>
        
-
-       </>
+                </>       
     );
+    
 }
- export default Toys;
+
+export default Gift;

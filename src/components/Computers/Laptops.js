@@ -8,9 +8,9 @@ import MainButton from "../MainButton/MainButton";
 
 
 
-const Laptops = () =>{
+const Electronics = () =>{
 
-    const Laptopss = [
+    const Electronics = [
         {
             id:1,
             brand:"ASUS",
@@ -54,64 +54,27 @@ const Laptops = () =>{
     
     return(
         <>
-       
-
-        
-            {/* {Laptopss.map((value , index) => {
-                return ( 
-                   <CommonCatalog
-                   brand = {value.brand}
-                   name = {value.name}
-                   description = {value.description}
-                   price = {value.price}
-                   />
-
-
-                   
-
-                   
-                   
-                   
-                   
-                   
-                  
-                   
-              
-                )
-            
-       
-        })} */}
-         <p className="headerName">Laptops</p>
+        <p className="headerName">Laptops</p>
         <div className="container-2">
-            {Laptopss.map((val , index) => {
-                return ( 
-                <div className="border-3">
-                    <div className="headline">
-                            <h5><b>{val.name}</b></h5>
-                            </div>
-                            <img className="subItemImage" src={val.image}  alt="imag"/>
-                        <div className="sub-container">
-                         
-                            <p style={{color:"lightblue"}}>{val.name}</p>
-                            <p>{val.description}</p>
-                            <p style={{color:"red"}}>{val.price}$</p>
-                            <div className="rowB">
-    </div>
-                            <MainButton/>
-                            </div>     
-                </div>
-                )
+        {Electronics.map((value , index) => {
+            return(
+                
+                <CommonCatalog 
+                name={value.name}
+                brand={value.name}
+                description={value.description}
+                price={value.price}
+                image={value.image}
+                />
+               
+            )
         })}
+ </div>
+       
 
-       </div>
-
-        
-
-
-        
        </>
 
     );
 }
 
-export default Laptops
+export default Electronics;

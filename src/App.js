@@ -16,7 +16,7 @@ import Phones from './components/Phones/Phones';
 import Toys from './components/Toys/Toys';
 import Handicrafts from './components/Handicrafts/Handicrafts';
 import Kitchenware from './components/Kithchenware/Kitchenware';
-import Gifts from './components/Category/Gifts/Gifts';
+import Gift from './components/Gifts/Gift';
 import Stationaries from './components/Stationaries/Stationaries';
 import BuyNow from './components/BuyNow/BuyNow';
 
@@ -42,9 +42,9 @@ const App = () => {
     <Route path="/shoes" element={<Shoes/>}/>
     <Route path="/phones" element={<Phones/>}/>
     <Route path="/toys" element={<Toys/>}/>
-    <Route path="/hansicrafts" element={<Handicrafts/>}/>
+    <Route path="/handicrafts" element={<Handicrafts/>}/>
     <Route path="/kitchenwares" element={<Kitchenware/>}/>
-    <Route path="/gifts" element={<Gifts/>}/>
+    <Route path="/gifts" element={<Gift/>}/>
     <Route path="/stationaries" element={<Stationaries/>}/>
     <Route path="/buynow" element={<BuyNow/>}/>
     </Routes>
