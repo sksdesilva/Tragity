@@ -3,8 +3,7 @@ import CommonCatalog from "../CommonCatalog/CommonCatalog";
 import '../../App.css';
 import RDButton from "../ItemColours/RDButoon";
 import MainButton from "../MainButton/MainButton";
-import { Link } from "react-router-dom";
-import { ReactDOM } from "react-dom/client";
+
 
 
 
@@ -47,6 +46,8 @@ const Laptops = () =>{
             price:"165",
             image:"./images/Computers/D4.jpg",
         },
+
+        
 
     ];
 
