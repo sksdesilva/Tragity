@@ -110,7 +110,7 @@ const Categoryitems = [
 
     return(
         <>
-        <h3>Browse items by Category</h3>
+        <p class="mainHeader">Browse items by Category</p>
         <div className="container-1">
             {Categoryitems.map((val , index) => {
                 return ( 

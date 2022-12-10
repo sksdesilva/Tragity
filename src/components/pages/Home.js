@@ -7,6 +7,7 @@ import Laptops from "../Computers/Laptops";
 const Home = () =>{
     return(
         <>
+        <Category/>
         <div id="demo" className="carousel slide" data-bs-ride="carousel">
 
 
@@ -40,7 +41,7 @@ const Home = () =>{
 <br/>
 
 
-<Category/>
+
 
 
 

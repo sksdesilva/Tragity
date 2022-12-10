@@ -4,6 +4,7 @@ import '../../App.css';
 import RDButton from "../ItemColours/RDButoon";
 import MainButton from "../MainButton/MainButton";
 import { Link } from "react-router-dom";
+import { ReactDOM } from "react-dom/client";
 
 
 
@@ -14,7 +15,7 @@ const Laptops = () =>{
         {
             id:1,
             brand:"ASUS",
-            name:"ASUS VIVOBOOK PRO 15",
+            name:"ASUS VIVOBOOK 15",
             description:"8 GB RAM , 1GB SSD",
             price:"200",
             image:"./images/Computers/V1.jpg",
@@ -79,35 +80,26 @@ const Laptops = () =>{
             
        
         })} */}
-         <h3>Laptops</h3>
+         <p className="headerName">Laptops</p>
         <div className="container-2">
             {Laptopss.map((val , index) => {
                 return ( 
-                <div className="border border-3">
+                <div className="border-3">
                     <div className="headline">
                             <h5><b>{val.name}</b></h5>
                             </div>
                             <img className="subItemImage" src={val.image}  alt="imag"/>
                         <div className="sub-container">
                          
-                            <p>{val.name}</p>
+                            <p style={{color:"lightblue"}}>{val.name}</p>
                             <p>{val.description}</p>
-                            <p>{val.price}$</p>
-                            <RDButton/>
-                          
-                            <Link to="/buynow">
+                            <p style={{color:"red"}}>{val.price}$</p>
+                            <div className="rowB">
+    </div>
                             <MainButton/>
-                            </Link>
-                            
-                           
-                           
                             </div>     
-            
-                   
                 </div>
                 )
-            
-       
         })}
 
        </div>

@@ -10,7 +10,7 @@ const RDButton = () =>{
     <button type="button" class="btn btn-danger">Red</button>
     </div>
     <div className="button-2">
-    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-secondary">Gray</button>
     </div>
     </div>
 
