@@ -1,5 +1,5 @@
 import React from "react";
-import '../../App.css';
+import '../MainButton/MainButton.css';
 import { Link } from "react-router-dom";
 
 const MainButton = () =>{
@@ -7,9 +7,7 @@ const MainButton = () =>{
         
         <div className="buyBtton">
         
-        <Link to="/buynow">
-        <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Buy Now</button>
-        </Link>
+        <Link class="buynow" to="/buynow">BuyNow</Link>
         
         </div>
         
