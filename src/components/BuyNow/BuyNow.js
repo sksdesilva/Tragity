@@ -4,6 +4,8 @@ const BuyNow= () =>{
     return(
 
 <>
+
+
 </>
 
     );

@@ -19,6 +19,8 @@ import Kitchenware from './components/Kithchenware/Kitchenware';
 import Gift from './components/Gifts/Gift';
 import Stationaries from './components/Stationaries/Stationaries';
 import BuyNow from './components/BuyNow/BuyNow';
+import Register from './components/Register/Register';
+import Login from './components/Login/Login';
 
 
 const App = () => {
@@ -47,6 +49,8 @@ const App = () => {
     <Route path="/gifts" element={<Gift/>}/>
     <Route path="/stationaries" element={<Stationaries/>}/>
     <Route path="/buynow" element={<BuyNow/>}/>
+    <Route path="/registration" element={<Register/>}/>
+    <Route path="/login" element={<Login/>}/>
     </Routes>
 
     <Footer/>

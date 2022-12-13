@@ -1,0 +1,45 @@
+.Register{
+    margin-left: 550px;
+}
+
+
+.inputFeild{
+    margin-right: 10px;
+    margin-left: 20px;
+    height: 50px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+
+#email{
+    width: 440px;
+}
+
+.Sign{
+    margin-left: 190px;
+    font-size: 20px;
+}
+
+.agree{
+    display: inline-flex;
+}
+
+
+
+.icon{
+    margin-left: 200px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+#signUp{
+    background-color: rgb(11, 110, 240);
+    border-radius: 10px;
+    width: 500px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    border-color: rgb(11, 110, 240);
+}
+
