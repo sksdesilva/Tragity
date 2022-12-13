@@ -1,5 +1,5 @@
 import React from "react";
-import '../Login/Login.css';
+import './Login.css';
 import { Link } from "react-router-dom";
 
 const Login =() =>{
@@ -26,13 +26,13 @@ const Login =() =>{
         <form onSubmit={handleSubmit}>
         <div className="row">
             <div className="col-8">
-            <img src="../images/logo.png" class="img" alt="1"/>
+            <img src="../images/log/log.webp" class="img" alt="1"/>
             </div>
             <div className="col-4">
             <div className="header">
         {/* <div className="icon"> */}
             <img className="icon" src="../images/logo.png" alt="icon"></img>
-            <p className="Sign">Sign Up</p>
+            <p className="Sign">Login</p>
         </div>
        
 
@@ -85,7 +85,7 @@ const Login =() =>{
 
         
 
-            </div>
+        </div>
         </div>
         </form>
         

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../Register/Register.css'
+import './Register.css';
 
 const Register = () =>{
 
@@ -30,7 +30,7 @@ const handleChange = (event) =>{
         <div className="header">
         {/* <div className="icon"> */}
             <img className="icon" src="../images/logo.png" alt="icon"></img>
-            <p className="Sign">Sign Up</p>
+            <p className="Signu">Sign Up</p>
         </div>
         <input 
         className="inputFeild"

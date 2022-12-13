@@ -4,7 +4,7 @@ import Navbar from './components/NavigationBar/Navbar';
 import Footer from './components/Footer/Footer';
 import Home from './components/pages/Home';
 import AboutUs from './components/pages/AboutUs';
-import Categories from './components/pages/Categories';
+import Register from './components/Register/Register';
 import Contact from './components/pages/Contact';
 import Computers from './components/Computers/Computers';
 import Cosmetics from './components/Cosmetics/Cosmetics';
@@ -19,7 +19,6 @@ import Kitchenware from './components/Kithchenware/Kitchenware';
 import Gift from './components/Gifts/Gift';
 import Stationaries from './components/Stationaries/Stationaries';
 import BuyNow from './components/BuyNow/BuyNow';
-import Register from './components/Register/Register';
 import Login from './components/Login/Login';
 
 
@@ -33,7 +32,7 @@ const App = () => {
     <Routes>
     <Route path="/" element={<Home/>}/>
     <Route path="/aboutUs" element={<AboutUs/>}/>
-    <Route path="/categories" element={<Categories/>}/>
+    <Route path="/register" element={<Register/>}/>
     <Route path="/contact" element={<Contact/>}/>
 
     <Route path="/computers" element={<Computers/>}/>
