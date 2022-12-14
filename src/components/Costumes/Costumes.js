@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import NewCatalog from "../CommonCatalog/NewCatalog";
 import CommonCatalog from "../CommonCatalog/CommonCatalog";
 import '../../App.css';
 import RDButton from "../ItemColours/RDButoon";
@@ -60,21 +61,26 @@ const Costumes = () =>{
         
 
     ];
+
+    const [cart,setCart] = useState([]);
+
+    const updateCart = (value) =>{
+        cart.push(value);
+        console.log(cart);
+    };
     
     
     return(
         <>
         <p className="headerName">Costumes</p>
         <div className="container-2">
-        {Costumes.map((value , index) => {
+        {Costumes.map((value) => {
             return(
                 
-                <CommonCatalog 
-                name={value.name}
-                brand={value.name}
-                description={value.description}
-                price={value.price}
-                image={value.image}
+                <NewCatalog 
+                key={value.id}
+                value={value}
+                updateCart={updateCart}
                 />
                
             )

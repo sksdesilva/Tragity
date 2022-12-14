@@ -7,7 +7,7 @@ const MainButton = () =>{
         
         <div className="buyBtton">
         
-        <Link class="buynow" to="/buynow">BuyNow</Link>
+        <Link class="buynow" to="/buynow">Add to Cart</Link>
         
         </div>
         

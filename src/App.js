@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer';
 import Home from './components/pages/Home';
 import AboutUs from './components/pages/AboutUs';
 import Register from './components/Register/Register';
-import Contact from './components/pages/Contact';
+import Cart from './components/pages/Cart';
 import Computers from './components/Computers/Computers';
 import Cosmetics from './components/Cosmetics/Cosmetics';
 import Costumes from './components/Costumes/Costumes';
@@ -33,8 +33,7 @@ const App = () => {
     <Route path="/" element={<Home/>}/>
     <Route path="/aboutUs" element={<AboutUs/>}/>
     <Route path="/register" element={<Register/>}/>
-    <Route path="/contact" element={<Contact/>}/>
-
+    <Route path="/cart" element={<Cart/>}/>
     <Route path="/computers" element={<Computers/>}/>
     <Route path="/cosmetics" element={<Cosmetics/>}/>
     <Route path="/costumes" element={<Costumes/>}/>

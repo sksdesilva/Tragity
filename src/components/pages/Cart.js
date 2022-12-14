@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () =>{
+const Cart = () =>{
     return(
 
         <>
@@ -12,4 +12,4 @@ const Contact = () =>{
 
     );
 }
-export default Contact;
+export default Cart;
