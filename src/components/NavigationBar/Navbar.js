@@ -2,14 +2,15 @@ import React from "react";
 import './NavBar.css';
 import { Link } from "react-router-dom";
 
-const Navbar = ({setShow}) =>{
+const Navbar = ({size,setShow}) =>{
     return(
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             
   <div className="container-fluid">
     <img class="logo" src="./images/logo.png" alt="logo"></img>
+ 
     <Link className="navbar-brand" to="/">Home</Link>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" onClick={() => setShow(true)}>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarText">
@@ -21,15 +22,20 @@ const Navbar = ({setShow}) =>{
           <Link className="nav-link" to="/registration">Registration</Link>
         </li>
         <li className="nav-item">
+          
         
-          <div className="cart" onClick={() => setShow(false)}>
+          <div className="cart" onClick={()=>setShow(false)}>
             <span>
           <img className="iconCart" src="../images/PNG-icons-Shopping-cart-13png.png" alt="logo"></img>
           </span>
-          <span>0</span>
+          <span>{size}</span>
           </div>
+
+          
+          
         
         </li>
+       
       </ul>
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>

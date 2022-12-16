@@ -1,11 +1,12 @@
 import './App.css';
+import './components/pages/Home.css'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Navbar from './components/NavigationBar/Navbar';
 import Footer from './components/Footer/Footer';
 import Home from './components/pages/Home';
 import AboutUs from './components/pages/AboutUs';
 import Register from './components/Register/Register';
-import Cart from './components/pages/Cart';
+import Cart from './components/CommonCatalog/Cart/Cart';
 import Computers from './components/Computers/Computers';
 import Cosmetics from './components/Cosmetics/Cosmetics';
 import Costumes from './components/Costumes/Costumes';
@@ -20,13 +21,22 @@ import Gift from './components/Gifts/Gift';
 import Stationaries from './components/Stationaries/Stationaries';
 import BuyNow from './components/BuyNow/BuyNow';
 import Login from './components/Login/Login';
+import Carousel from './components/Carousel';
+import { useState } from 'react';
+import Category from './components/Category/Category';
 
 
 const App = () => {
+
+
   return (
     <>
     <BrowserRouter>
-    <Navbar/>
+ 
+
+    
+
+    
     
     
     <Routes>
@@ -36,8 +46,8 @@ const App = () => {
     <Route path="/cart" element={<Cart/>}/>
     <Route path="/computers" element={<Computers/>}/>
     <Route path="/cosmetics" element={<Cosmetics/>}/>
-    <Route path="/costumes" element={<Costumes/>}/>
-    <Route path="/electronics" element={<Electronics/>}/>
+    <Route path="/costumes" element={<Costumes />}/>
+    <Route path="/electronics" element={<Electronics />}/>
     <Route path="/pets" element={<Pets/>}/>
     <Route path="/shoes" element={<Shoes/>}/>
     <Route path="/phones" element={<Phones/>}/>
@@ -49,8 +59,13 @@ const App = () => {
     <Route path="/buynow" element={<BuyNow/>}/>
     <Route path="/registration" element={<Register/>}/>
     <Route path="/login" element={<Login/>}/>
+    <Route path="/cart" element={<Cart/>}/>
+    
     </Routes>
 
+    
+
+    
     <Footer/>
 
     </BrowserRouter>

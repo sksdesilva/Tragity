@@ -13,6 +13,10 @@
     width: 40px;
 }
 
+.cart{
+    cursor: pointer;
+}
+
 .cart span:nth-child(1){
     font-size: 1rem;
     color: white;

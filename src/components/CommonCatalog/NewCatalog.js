@@ -5,7 +5,7 @@ import MainButton from "../MainButton/MainButton";
 import '../Category/Category.css'
 
 
-const NewCatalog = ({value,updateCart}) =>{
+const NewCatalog = ({value, addCart}) =>{
     const { id , name, brand , description , price , image} = value;
     return(        
                 <>
@@ -22,7 +22,9 @@ const NewCatalog = ({value,updateCart}) =>{
                             <p style={{color:"red"}}>{price}$</p>
                             <div className="rowB">
                                 </div>
-                                   <button onClick={()=>updateCart(value)}>add to cart</button>
+                                    <div className="buyBtton">
+                                   <p class="buynow" onClick={()=>addCart(value)}>add to cart</p>
+                                   </div>
                             </div> 
                                             </div>
                                             

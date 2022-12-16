@@ -3,6 +3,10 @@ import CommonCatalog from "../CommonCatalog/CommonCatalog";
 import '../../App.css';
 import RDButton from "../ItemColours/RDButoon";
 import MainButton from "../MainButton/MainButton";
+import Cart from "../CommonCatalog/Cart/Cart";
+import NewCatalog from "../CommonCatalog/NewCatalog";
+import Navbar from "../NavigationBar/Navbar";
+import { useState } from "react";
 
 
 
@@ -52,58 +56,58 @@ const Cosmetics = () =>{
     ];
 
     
+  
+    const[show, setShow] = useState(true);
+    const [cart, setCart] = useState([]);
+    const [warning, setWarning] = useState(false);
+
+    const addCart = (value) =>{
+        let isPresent = false;
+        cart.forEach((product)=>{
+          if(value.id === product.id)
+          isPresent=true;
+        })
+          if (isPresent){
+              setWarning(true);
+              setTimeout(()=>{
+                setWarning(false);
+              },1500);
+              return;
+          }
+          setCart([...cart, value]);
+    
+      }
+    
+
+    
+    
+    
     return(
+        
         <>
-       
+        <Navbar size={cart.length} setShow={setShow}/>
+        
+
+        {
+      show ? <div className="container-2">
+      {Cosmetics.map((value) => {
+          return(
+              
+              <NewCatalog 
+              key={value.id}
+              value={value}
+              addCart={addCart}
+              />  
+          )
+      })}
+                </div>  : <Cart cart={cart} setCart={setCart} addCart={addCart} setShow={setShow}   />
+        }
+
+    {
+        warning && <div className="warning">Item is already added</div>
+    }
 
         
-            {/* {Laptopss.map((value , index) => {
-                return ( 
-                   <CommonCatalog
-                   brand = {value.brand}
-                   name = {value.name}
-                   description = {value.description}
-                   price = {value.price}
-                   />
-
-
-                   
-
-                   
-                   
-                   
-                   
-                   
-                  
-                   
-              
-                )
-            
-       
-        })} */}
-         <p className="headerName">Laptops</p>
-        <div className="container-2">
-            {Cosmetics.map((val , index) => {
-                return ( 
-                <div className="border-3">
-                    <div className="headline">
-                            <h5><b>{val.name}</b></h5>
-                            </div>
-                            <img className="subItemImage" src={val.image}  alt="imag"/>
-                        <div className="sub-container">
-                         
-                            <p style={{color:"lightblue"}}>{val.name}</p>
-                            <p>{val.description}</p>
-                            <p style={{color:"red"}}>{val.price}$</p>
-                            <div className="rowB">
-    </div>
-                            <MainButton/>
-                            </div>     
-                </div>
-                )
-        })}
-
-       </div>
 
         
 

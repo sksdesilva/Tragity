@@ -64,3 +64,20 @@ h3{
   height: 150px;
   width: 150px;
 }
+
+.buyBtton{
+  background-color: aqua;
+  width: 100px;
+  border-radius: 25px;
+  height: 30px;
+}
+
+
+.buynow{
+  text-decoration: none;
+  margin-left: 8px;
+  margin-bottom:10px;
+  padding-top: 5px;
+  cursor: pointer;
+  
+}

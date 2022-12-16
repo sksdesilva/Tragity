@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Register.css';
+import Navbar from "../NavigationBar/Navbar";
 
 const Register = () =>{
+
+
 
 const [data, setData] = React.useState();
 
@@ -23,6 +26,7 @@ const handleChange = (event) =>{
     return (
 
         <>
+        <Navbar size={0}/>
         <form onSubmit={handleSubmit}>
             <div className="Register">
                 <div className="col-6">
