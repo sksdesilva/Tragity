@@ -92,7 +92,7 @@ const Costumes = () =>{
         
         <>
         <Navbar size={cart.length} setShow={setShow}/>
-        <p className="headerName">Costumes</p>
+        
 
         {
       show ? <div className="container-2">
@@ -106,7 +106,7 @@ const Costumes = () =>{
               />  
           )
       })}
-</div>  : <Cart cart={cart} setCart={setCart} addCart={addCart} setShow={setShow}   />
+                </div>  : <Cart cart={cart} setCart={setCart} addCart={addCart} setShow={setShow}   />
         }
 
     {

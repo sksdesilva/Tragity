@@ -106,11 +106,6 @@ const Electronics = () =>{
         warning && <div className="warning">Item is already added</div>
     }
 
-        
-        
-       
-
-       
 
        </>
 
