@@ -16,6 +16,7 @@ const Handicrafts = () =>{
             description:"8 GB RAM , 1GB SSD",
             price:"200",
             image:"./images/Computers/V1.jpg",
+            amount:1,
         },
 
         {
@@ -25,6 +26,7 @@ const Handicrafts = () =>{
             description:"8 GB RAM , 128GB SSD",
             price:"150",
             image:"./images/Computers/D1.jpg",
+            amount:1,
         },
 
         {
@@ -34,6 +36,7 @@ const Handicrafts = () =>{
             description:"8 GB RAM , 128GB SSD",
             price:"175",
             image:"./images/Computers/V1.jpg",
+            amount:1,
         },
 
         {
@@ -43,6 +46,7 @@ const Handicrafts = () =>{
             description:"8 GB RAM , 128GB SSD",
             price:"165",
             image:"./images/Computers/D4.jpg",
+            amount:1,
         },
 
         
@@ -70,6 +74,19 @@ const Handicrafts = () =>{
           setCart([...cart, value]);
     
       }
+
+      const updateItems = (value,operation) =>{
+        let inde = -1;
+        cart.forEach((data, index)=>{
+            if(data.id === value.id)
+            inde = index; 
+        });
+        const tempArr = cart;
+        tempArr[inde].amount += operation;
+        if((tempArr[inde]===0))
+        tempArr[inde].amount = 1;
+        setCart([...tempArr])
+      }
     
 
     
@@ -94,7 +111,7 @@ const Handicrafts = () =>{
               />  
           )
       })}
-                </div>  : <Cart cart={cart} setCart={setCart} addCart={addCart} setShow={setShow}   />
+                </div>  : <Cart cart={cart} setCart={setCart} addCart={addCart} setShow={setShow} updateItems={updateItems}  />
         }
 
     {

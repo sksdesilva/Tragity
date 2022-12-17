@@ -1,10 +1,33 @@
 
 import { getValue } from '@testing-library/user-event/dist/utils';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
 import './Cart.css';
 
-const Cart = ({cart,setCart,setShow}) =>{
+const Cart = ({cart,setCart,setShow,updateItems}) =>{
     const [price , setPrice] = useState(0);
+
+    
+
+    const generatePrice = () =>{
+        let ans = 0;
+        
+        cart.map((value)=>(
+            ans += value.price * value.amount
+        ))
+        setPrice(ans);
+    }
+
+    const removeItem = (id) =>{
+        const array = cart.filter((value)=>value.id !== id);
+        setCart(array);
+        
+    }
+
+    useEffect(()=>{
+        generatePrice();
+    })
+
     return(
 
         <>
@@ -23,11 +46,12 @@ const Cart = ({cart,setCart,setShow}) =>{
                         </div>
                         <div className="col-5">
                         <div>
-                            <button>+</button>
+                            <button onClick={()=>updateItems(value,+1)}>+</button>
+                            
+                            <button>{value.amount}</button>
+                            <button onClick={()=>updateItems(value,-1)}>-</button>
                             <span>{value.price}$</span>
-                            <br/>
-                            <button>-</button>
-                            <button id="bt1">Remove</button>
+                            <button id="bt1" onClick={()=>removeItem(value.id)}>Remove</button>
                             
                            
                         </div>

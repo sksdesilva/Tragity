@@ -32,9 +32,10 @@ article{
     width:100px;
     color: white;
     background-color:lightgreen;
+    margin-left: 20px;
 }
 #price{
-    margin-left: 40px;
+    margin-left: 80px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -45,6 +46,7 @@ article{
 
 #pdescription{
     font-family: 'Times New Roman', Times, serif;
+    margin-right: 400px;
 }
 
 /* 
