@@ -79,6 +79,7 @@ const Toys = () =>{
         
         <>
         <Navbar size={cart.length} setShow={setShow}/>
+        <p className="headerName">Toys</p>
         
 
         {

@@ -1,7 +1,7 @@
 
 .backbtn{
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: -5px;
 }
 
 article{
@@ -34,7 +34,7 @@ article{
     background-color:lightgreen;
 }
 #price{
-    margin-left: 400px;
+    margin-left: 40px;
     font-family: 'Times New Roman', Times, serif;
 }
 

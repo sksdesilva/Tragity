@@ -92,6 +92,7 @@ const Costumes = () =>{
         
         <>
         <Navbar size={cart.length} setShow={setShow}/>
+        <p className="headerName">Costumes</p>
         
 
         {

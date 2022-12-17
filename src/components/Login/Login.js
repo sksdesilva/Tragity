@@ -1,6 +1,7 @@
 import React from "react";
 import './Login.css';
 import { Link } from "react-router-dom";
+import Navbar from "../NavigationBar/Navbar";
 
 const Login =() =>{
 
@@ -22,6 +23,7 @@ const Login =() =>{
 
     return (
         <>
+         <Navbar size={0}/>
         
         <form onSubmit={handleSubmit}>
         <div className="row">

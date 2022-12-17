@@ -78,6 +78,7 @@ const Shoes = () =>{
         
         <>
         <Navbar size={cart.length} setShow={setShow}/>
+        <p className="headerName">Shoes</p>
         
 
         {

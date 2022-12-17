@@ -78,6 +78,7 @@ const Kitchenware = () =>{
         
         <>
         <Navbar size={cart.length} setShow={setShow}/>
+        <p className="headerName">Kitchenware</p>
         
 
         {

@@ -28,10 +28,33 @@ import Category from './components/Category/Category';
 
 const App = () => {
 
+  const[show, setShow] = useState(true);
+  const [cart, setCart] = useState([]);
+  const [warning, setWarning] = useState(false);
+
+  const addCart = (value) =>{
+      let isPresent = false;
+      cart.forEach((product)=>{
+        if(value.id === product.id)
+        isPresent=true;
+      })
+        if (isPresent){
+            setWarning(true);
+            setTimeout(()=>{
+              setWarning(false);
+            },1500);
+            return;
+        }
+        setCart([...cart, value]);
+  
+    }
+
 
   return (
     <>
     <BrowserRouter>
+
+   
  
 
     
