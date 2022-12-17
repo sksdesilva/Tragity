@@ -1,4 +1,64 @@
-.cartimg{
-    width: 20px;
-    height: 20px;
+
+.backbtn{
+    margin-left: 10px;
+    margin-top: 5px;
 }
+
+article{
+    width: 58%;
+    margin: auto;
+}
+
+.col-7 img{
+    width: 50px;
+    height: 50px;
+}
+
+.col-5{
+    display: inline flex;
+}
+
+.col-5 button{
+    margin-right: 20px;
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+.col-5 span{
+    background-color: aqua;
+}
+
+#bt1{
+    width:100px;
+    color: white;
+    background-color:lightgreen;
+}
+#price{
+    margin-left: 400px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tAmount{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#pdescription{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* 
+.cart_img{
+    display: flex;
+    width: 400px;
+}
+
+.cart-img p{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.cartimg{
+    width: 100px;
+    height: 100px;
+} */

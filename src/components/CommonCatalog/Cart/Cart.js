@@ -7,34 +7,51 @@ const Cart = ({cart,setCart,setShow}) =>{
     const [price , setPrice] = useState(0);
     return(
 
-        
+        <>
+        <button className="backbtn" onClick={()=>setShow(true)}>Back to Category</button>
         <article>
-            <button onClick={()=>setShow(true)}>Back to Category</button>
+            
             {
                 cart?.map((value)=>(
-                    <div className = "cart_box" key={value.id}>
+                    <div className="row">
+                        
+                    <div className = "col-7" key={value.id}>
                         <div className="cart_img">
-                            <img class = "cartimg"src={value.image}/>
+                            <img src={value.image}/>
                             <p>{value.name}</p>
+                            </div>
                         </div>
+                        <div className="col-5">
                         <div>
                             <button>+</button>
+                            <span>{value.price}$</span>
+                            <br/>
                             <button>-</button>
+                            <button id="bt1">Remove</button>
+                            
+                           
                         </div>
+                        
                         <div>
-                            <span>{value.price}</span>
-                            <button>Remove</button>
+                       
+                            
+                            
+                            </div>
                         </div>
+                        <hr/>
                         </div>
+                        
+                     
 
 
                 ))}
             
-            <div>
-                <span>Total Price</span>
-                <span>{price}$</span>
+            <div className="tAmount">
+                <span id ="pdescription">Total Price</span>
+                <span id="price">{price}$</span>
             </div>
         </article>
+        </>
         )
         }
 
