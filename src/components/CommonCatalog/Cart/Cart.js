@@ -35,10 +35,10 @@ const Cart = ({cart,setCart,setShow,updateItems}) =>{
         <article>
             
             {
-                cart?.map((value)=>(
+                cart?.map((value,index)=>(
                     <div className="row">
                         
-                    <div className = "col-7" key={value.id}>
+                    <div className = "col-7" key={index}>
                         <div className="cart_img">
                             <img src={value.image}/>
                             <p>{value.name}</p>
