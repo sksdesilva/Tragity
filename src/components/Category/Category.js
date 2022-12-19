@@ -113,16 +113,19 @@ const Categoryitems = [
         <p class="mainHeader">Browse items by Category</p>
         <div className="container-1">
             {Categoryitems.map((val , index) => {
+            
                 return ( 
-                <div className="item">
+                <div key={index} className="item">
+                
         
                 <Link class="cat" to ={val.url}>
-                    <div className="row">
+                    <div className="row" >
                         <div className="col-4">
                             <img className="Cimg" src={val.image}  alt="image"/>
                         
                         </div>
                         <div className="col-8">
+                            
                             <h4>{val.itemName}</h4>
                             <p>{val.adds} ads</p>
                             </div>     
