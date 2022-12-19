@@ -23,7 +23,7 @@ const NewCatalog = ({value, addCart}) =>{
                             <div className="rowB">
                                 </div>
                                     <div className="buyBtton">
-                                   <p class="buynow" onClick={()=>addCart(value)}>add to cart</p>
+                                   <p className="buynow" onClick={()=>addCart(value)}>add to cart</p>
                                    </div>
                             </div> 
                                             </div>
