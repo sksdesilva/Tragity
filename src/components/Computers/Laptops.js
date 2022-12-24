@@ -7,6 +7,7 @@ import Cart from "../CommonCatalog/Cart/Cart";
 import NewCatalog from "../CommonCatalog/NewCatalog";
 import Navbar from "../NavigationBar/Navbar";
 import { useState } from "react";
+import LaptopsData from "../Data/LaptopsData";
 
 
 
@@ -14,50 +15,7 @@ import { useState } from "react";
 
 const Electronics = () =>{
 
-    const Electronics = [
-        {
-            id:1,
-            brand:"ASUS",
-            name:"ASUS VIVOBOOK 15",
-            description:"8 GB RAM , 1GB SSD",
-            price:"200",
-            image:"./images/Computers/V1.jpg",
-            amount:1,
-        },
-
-        {
-            id:2,
-            brand:"DELL",
-            name:"DELL INSPIRON 3502",
-            description:"8 GB RAM , 128GB SSD",
-            price:"150",
-            image:"./images/Computers/D1.jpg",
-            amount:1,
-        },
-
-        {
-            id:3,
-            brand:"Asus",
-            name:"ASUS ZENBOOK 14",
-            description:"8 GB RAM , 128GB SSD",
-            price:"175",
-            image:"./images/Computers/V1.jpg",
-            amount:1,
-        },
-
-        {
-            id:4,
-            brand:"Dell",
-            name:"DELL VOSTRO 3510",
-            description:"8 GB RAM , 128GB SSD",
-            price:"165",
-            image:"./images/Computers/D4.jpg",
-            amount:1,
-        },
-
-        
-
-    ];
+  
 
     
     const[show, setShow] = useState(true);
@@ -107,7 +65,7 @@ const Electronics = () =>{
 
         {
       show ? <div className="container-2">
-      {Electronics.map((value) => {
+      {LaptopsData.map((value) => {
           return(
               
               <NewCatalog 
