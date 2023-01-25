@@ -10,7 +10,7 @@ const AboutUs = () =>{
         <h1><center>About Us</center></h1>
         <div className="abUs">
         <p className="aboutUs">
-Founded in August of 2008 and based in Sri Lanka, Tragity is a trusted community marketplace for people to list, discover, and buy unique products around the world — online or from a mobile phone or tablet. Tragity connects people to unique shopping experiences, at any price point, in more than 65,000 cities and 191 countries. And with world-class customer service and a growing community of users, Tragity is the easiest way for people to monetize their extra space and showcase it to an audience of millions. 
+Founded in August of 2022 and based in Sri Lanka, Tragity is a trusted community marketplace for people to list, discover, and buy unique products around the world — online or from a mobile phone or tablet. Tragity connects people to unique shopping experiences, at any price point, in more than 65,000 cities and 191 countries. And with world-class customer service and a growing community of users, Tragity is the easiest way for people to monetize their extra space and showcase it to an audience of millions. 
 </p>
 </div>
         
