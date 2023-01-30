@@ -83,7 +83,7 @@
     
         {
             id:11,
-            itemName:"Gift",
+            itemName:"Gifts",
             adds:"4",
             image:"./images/Category/11.png",
             url:"gifts"
