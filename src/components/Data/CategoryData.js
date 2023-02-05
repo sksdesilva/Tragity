@@ -75,7 +75,7 @@
     
         {
             id:10,
-            itemName:"kitchenware",
+            itemName:"Kitchenware",
             adds:"4",
             image:"./images/Category/10.png",
             url:"kitchenwares",
